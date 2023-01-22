@@ -34,3 +34,22 @@ export function getThreats(moves: Move[]) {
 		return threat;
 	});
 }
+
+export function roleAbbrToRole(role: string) {
+	switch (role) {
+		case 'p':
+			return 'pawn';
+		case 'n':
+			return 'knight';
+		case 'b':
+			return 'bishop';
+		case 'r':
+			return 'rook';
+		case 'q':
+			return 'queen';
+		case 'k':
+			return 'king';
+		default:
+			return 'pawn';
+	}
+}
